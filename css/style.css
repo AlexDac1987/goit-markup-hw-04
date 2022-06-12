@@ -110,7 +110,16 @@ img {
 }
 
 .contacts-list {
-  margin-right: 50px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-right: 30px;
+  margin-left: auto;
+}
+
+.contacts-list-icon {
+  fill: #757575;
+  margin-right: 10px;
 }
 
 .header-link:hover,
@@ -118,24 +127,24 @@ img {
   color: var(--accent-color);
 }
 
-.contacts-email:focus,
-.contacts-email:hover {
+.contacts-email:hover,
+.contacts-email:focus {
+  color: var(--accent-color);
+}
+
+.contacts-email + .contacts-list-icon:hover,
+.contacts-email + .contacts-list-icon:focus {
+  fill: var(--accent-color);
+}
+
+.contacts-phone .contacts-tel:hover,
+.contacts-email .contacts-tel:focus {
   color: var(--accent-color);
 }
 
 .contacts-phone:hover,
 .contacts-phone:focus {
   color: var(--accent-color);
-}
-
-.navi-button:hover,
-.navi-button:focus {
-  color: #ffffff;
-}
-
-.navi-button:hover,
-.navi-button:focus {
-  background: #2196f3;
 }
 
 .contacts-phone,
@@ -150,12 +159,24 @@ img {
 /*-----------------------------Hero-------------------------------------*/
 
 .hero {
-  background-color: #2f303a;
+  width: 1600px;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/hero-photo.jpg);
+  background-color: #c4c4c4;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
   padding: 200px 0px;
   box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero-title {
+  width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -163,8 +184,7 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  background-color: #303030;
-  margin-bottom: 0 auto 30px;
+  margin: 0 auto 30px;
 }
 
 .hero-button {
@@ -206,6 +226,16 @@ img {
 .advantages-item:not(:first-child) {
   margin-left: 30px;
   max-width: 270px;
+}
+
+.advantages-logo-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  background-color: #f5f4fa;
+  margin-bottom: 30px;
 }
 
 .advantages-title {
@@ -251,6 +281,16 @@ img {
   padding: 94px 0px;
 }
 
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
 .team-list-pics {
   width: 270px;
   background: #ffffff;
@@ -283,16 +323,6 @@ img {
   padding: 30px 0px;
 }
 
-.team-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  color: #212121;
-  margin-bottom: 50px;
-  text-align: center;
-}
-
 .team-list-item {
   font-weight: 500;
   font-size: 16px;
@@ -310,6 +340,44 @@ img {
   letter-spacing: 0.03em;
   text-align: center;
   color: #757575;
+}
+
+.team-soc-list {
+  display: flex;
+  justify-content: center;
+}
+
+.team-soc-item {
+  width: 44px;
+  height: 44px;
+  margin-left: 10px;
+}
+
+.team-soc-item:first-child {
+  margin-left: 0;
+}
+
+.team-soc-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.team-soc-link:hover,
+.team-soc-link:focus {
+  background-color: #2196f3;
+}
+
+.team-soc-link:hover .team-soc-icon,
+.team-soc-link:focus .team-soc-icon {
+  fill: #ffffff;
+}
+
+.team-soc-icon {
+  fill: #afb1b8;
 }
 
 /*-------------------------------Footer-----------------------------*/
@@ -423,6 +491,16 @@ img {
   color: #212121;
   border: none;
   border-radius: 4px;
+}
+
+.navi-button:hover,
+.navi-button:focus {
+  color: #ffffff;
+}
+
+.navi-button:hover,
+.navi-button:focus {
+  background: #2196f3;
 }
 
 .second-list {
