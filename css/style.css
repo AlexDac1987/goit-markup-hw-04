@@ -445,6 +445,15 @@ img {
   padding: 50px 0px;
 }
 
+.footer-boxes {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-comunic {
+  margin-right: 70px;
+}
+
 .footer-logo {
   font-weight: 700;
   font-size: 26px;
@@ -456,7 +465,7 @@ img {
   margin-bottom: 20px;
 }
 
-.footer-list-item:not:(:last-child) {
+.footer-list-item:not(:last-child) {
   margin-bottom: 9px;
 }
 
@@ -500,6 +509,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+  margin-bottom: 20px;
 }
 
 .footer-soc-list {
@@ -510,11 +520,11 @@ img {
 .footer-soc-item {
   width: 44px;
   height: 44px;
-  margin-left: 10px;
+  margin-right: 10px;
 }
 
-.footer-soc-item:first-child {
-  margin-left: 0;
+.footer-soc-item:last-child {
+  margin-right: 0;
 }
 
 .footer-soc-link {
@@ -524,6 +534,7 @@ img {
   width: 100%;
   height: 100%;
   border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .footer-soc-link:hover,
