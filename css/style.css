@@ -158,7 +158,7 @@ img {
 /*-----------------------------Hero-------------------------------------*/
 
 .hero {
-  width: 1600px;
+  max-width: 1600px;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -167,7 +167,7 @@ img {
   background-color: #c4c4c4;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   padding: 200px 0px;
   box-sizing: border-box;
   margin-left: auto;
@@ -400,26 +400,33 @@ img {
 
 .clients-list-link {
   box-sizing: border-box;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-}
-
-.clients-list-link:hover,
-.clients-list-link:focus {
-  border: 1px solid var(--accent-color);
+  /* padding: 16px 32px; */
 }
 
 .clients-list-link:not(:last-child) {
   margin-right: 30px;
 }
 
+.clients-list-link:hover {
+  color: var(--accent-color);
+}
+
 .clients-icon {
+  box-sizing: border-box;
+  width: 170px;
+  height: 92px;
   fill: #afb1b8;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
   padding: 16px 32px;
 }
-.clients-icon:focus,
+
 .clients-icon:hover {
   fill: var(--accent-color);
+}
+
+.clients-icon:hover {
+  border: 1px solid var(--accent-color);
 }
 
 /*-------------------------------Footer-----------------------------*/
@@ -550,6 +557,8 @@ img {
   fill: #ffffff;
 }
 
+/* -----------------------------PORTFOLIO---------------------------- */
+
 /*-------------------------------Buttons -----------------------------*/
 
 .navi-list {
@@ -592,6 +601,9 @@ img {
 .navi-button:hover,
 .navi-button:focus {
   color: #ffffff;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
 }
 
 .navi-button:hover,
@@ -622,7 +634,12 @@ img {
   background: #ffffff;
 }
 
-.examples-list:hover {
+.examples-link {
+  width: 100%;
+  height: 100%;
+}
+
+.examples-link:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -634,7 +651,7 @@ img {
   border-left: 1px solid #eeeeee;
 }
 
-.examples-link {
+.examples-work {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
