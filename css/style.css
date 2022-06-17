@@ -427,8 +427,8 @@ img {
   border-color: var(--accent-color);
 }
 
-.clients-icon-link .clients-icon:hover,
-.clients-icon-link .clients-icon:focus {
+.clients-icon-link:hover .clients-icon,
+.clients-icon-link:focus .clients-icon {
   fill: var(--accent-color);
 }
 
